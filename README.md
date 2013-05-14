@@ -21,8 +21,8 @@ By default :
 Arduino
 -----
 
-Just copy the code in the arduino directory into your arduino sketchbook directory (it contains the rc-switch library and a example programs)
-Upload arduinocommand.ino for test purpose
+* Just copy the code in the arduino directory into your arduino sketchbook directory (it contains the rc-switch library and a example programs)
+* Upload arduinocommand.ino for test purpose
 
 All the explanation is inside the comments
 
