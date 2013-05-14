@@ -29,8 +29,10 @@ All the explanation is inside the comments
 Raspberry PI
 -----
 
-The program is already compiled.
+* The program is already compiled.
+* You can download the executable directly with this command 
+* https://github.com/maditnerd/RpiArduinoCommand/blob/master/rpi/arduinocommand?raw=true
 
 It worked like this:
-./arduinocommand PIN LOW/HIGH
-Ex: ./arduinocommand 12 HIGH
+* ./arduinocommand PIN LOW/HIGH
+* Ex: ./arduinocommand 12 HIGH
