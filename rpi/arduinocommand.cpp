@@ -40,11 +40,10 @@ int main(int argc, char *argv[]) {
 
 if (argc == 3) // Verify if there is enough arguments
 	{
-    //Copy Argument 1 in a string
-	strcpy(buffer,"9");
-    strcat(buffer,argv[1]);
+    strcpy(buffer,"9"); // Add a random number at the start
+    strcat(buffer,argv[1]); //Copy Argument 1 in a string
 
-    strcat(buffer,"9"); //Add two random number to dissociate Pin from LOW/HIGH
+    strcat(buffer,"9"); //Add a random number to dissociate Pin from LOW/HIGH (and verification purpose)
    
     if (!strcmp("LOW",argv[2]))
     {
@@ -80,12 +79,12 @@ else
 }
 
 
-    long code = strtol(buffer,NULL,10); // Convert argument to long
+    long code = strtol(buffer,NULL,10); // Convert our code (which is a string) to long
     printf("Code sended: %ld\n",code);
 
     if (wiringPiSetup () == -1) return 1;
-        RCSwitch mySwitch = RCSwitch();
-        mySwitch.enableTransmit(PIN);
+        RCSwitch mySwitch = RCSwitch(); //Create a RCSwitch Object
+        mySwitch.enableTransmit(PIN); //Enable transmission on PIN
 
         mySwitch.send(code,24); // Send code in decimal
         return 0;
