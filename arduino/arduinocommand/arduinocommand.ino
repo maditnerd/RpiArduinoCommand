@@ -34,24 +34,24 @@ void setup() {
 
 void loop() {
 
-  if (mySwitch.available()) {
-   unsigned long value = mySwitch.getReceivedValue();
-   high_or_low = value % 10;
+  if (mySwitch.available()) { //If a message is sended with RF Code
+   unsigned long value = mySwitch.getReceivedValue(); // Copy the value 
+   high_or_low = value % 10; //Retrieving last number from the code
    
    
    //If the Pin is 2 digits
-   if (value > 9999)1
+   if (value > 9999) // If the code is 5 digits (Pin 10 to 99)
    {
-     verification_number = value / 10 % 10;
-     pin_selected = value / 100 % 100;
+     verification_number = value / 10 % 10; //Retrieve verification number
+     pin_selected = value / 100 % 100; // Retrieve Pin
    }
-   else
+   else // If the code is not 5 digits
    {
-      verification_number = value / 1000 % 10;
-      pin_selected = value / 100 % 10;
+      verification_number = value / 1000 % 10; //Retrieve verification number
+      pin_selected = value / 100 % 10; // Retrieve Pin
    }
    
-  
+   //Verify the verification_number
    if (verification_number == 9)
    {
  
@@ -68,7 +68,7 @@ void loop() {
      Serial.println("LOW");
      }
    
-     digitalWrite(pin_selected,high_or_low);
+     digitalWrite(pin_selected,high_or_low); //Change PIN status
      }
    
    Serial.print("Code Received: ");
