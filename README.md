@@ -10,11 +10,11 @@ https://www.youtube.com/watch?v=TlHfjvLdaBA
 Wiring
 ----
 By default : 
-* Pin 2 of an Arduino
+* Pin 2 of the Arduino
 * GPIO 7 (Pin 11) of an Raspberry PI (the last one)
 
-http://pi.gadgetoid.com/WiringPi-GPIO-Pinout.png?v=1
- http://elinux.org/images/2/2a/GPIOs.png
+* http://pi.gadgetoid.com/WiringPi-GPIO-Pinout.png?v=1 (WiringPi Pins)
+* http://elinux.org/images/2/2a/GPIOs.png (GPIO)
 
 
 
