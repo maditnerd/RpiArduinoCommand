@@ -31,7 +31,7 @@ Raspberry PI
 
 * The program is already compiled.
 * You can download the executable directly with this command 
-* https://github.com/maditnerd/RpiArduinoCommand/blob/master/rpi/arduinocommand?raw=true
+* wget https://github.com/maditnerd/RpiArduinoCommand/blob/master/rpi/arduinocommand?raw=true
 
 It worked like this:
 * ./arduinocommand PIN LOW/HIGH
