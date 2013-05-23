@@ -33,6 +33,6 @@ Raspberry PI
 * You can download the executable directly with this command 
 * wget http://smarturl.it/arduinocommand
 
-It worked like this:
+It work like this:
 * ./arduinocommand PIN LOW/HIGH
 * Ex: ./arduinocommand 12 HIGH
